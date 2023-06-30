@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+*{
+     background-color: hsl(0, 0%, 86%); 
+    
+}
+.container{
+    margin-top: 140px;
+    margin-bottom: 160px;
+    background-color: white;
+    width: 40%;
+    padding-top: 59px;
+    padding-bottom: 1px ;
+    position: relative;
+    left: 32%;
+    border-radius: 20px 20px 120px 20px;
+}
+.the_inputs{
+display: flex;
+background-color: white;
+position: relative;
+bottom: 0px;
+width: 60%;
+right: 60px;
+}
+input{
+    text-indent:10px;
+    width: 26%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: hsl(0, 0%, 86%);
+    
+}
+input[type="number"]:focus{
+    outline: none;
+    border-color:  hsl(259, 100%, 65%)
+}
+hr{
+    width: 70%;
+    position: relative;
+    top: 25px;
+}
+.bt{
+    display: unset;
+    background-color: transparent;
+    position: relative;
+    left: 30%;
+    bottom: 15px;
+}
+.age{
+text-align: left;
+margin-left: 40px;
+font-size: 32px;
+line-height: 90%;
+width: 80%;
+position: relative;
+bottom: 30px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+p,input,h1,span,button,.age{
+background-color: white;
+font-family: 'Poppins', sans-serif;
+
+
+    color: hsl(0, 0%, 8%) ;
+}
+p{
+   font-size: 12px;
+   position: relative;
+   bottom:30px ;
+   left: 30px;
+}
+
+/* FOR THE VALID AND REQUEIRED INPUTS  */
+
+.red,.valid,.date{
+    font-size: 8.5px;
+    font-style:italic;
+position: absolute;
+top:35px;   
+color:hsl(0, 100%, 67%);
+}
+#dt{
+    display: none; 
+
+}
+#reqd{
+    display: none; 
+}
+#reqy{
+    position: absolute;
+    right:-260px;
+    display: none; 
+}
+#reqm{
+    position: absolute;
+    right:-10px;    
+    display: none; 
+
+}
+#vm{
+    position: absolute;
+    right:-10px;
+    display: none; 
+
+}
+#vy{
+    position: absolute;
+    right:-260px;
+    display: none; 
+
+}
+#vd{
+    display: none; 
+
+}
+/* END */
+
+
+
+#mo{
+    position: relative;
+    left: 45px;
+}
+h1{
+    display: flex;
+    width: 90%;
+}
+span{
+    color: hsl(259, 100%, 65%);
+}
+
+    
+img,button{
+    background-color: black;
+    border-radius: 50%;
+}
+img:hover,button:hover{
+    background-color: hsl(259, 100%, 65%);
+    cursor:pointer;
+}
+
+
+
+/* FOR MOBILE*/
+@media (max-width: 375px){
+  
+    .container{
+        width: fit-content;
+        position: relative;
+        left: 2%;
+        margin-right: 10px;
+        margin-bottom: 110px;
+        margin-top: 90px;
+    }
+    .age{
+        margin-top: 110px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .the_inputs{
+        width:100%;
+        position: relative;
+        left: 0%;
+        margin-top:10px ;
+    }
+    input{
+        width: 18%;
+    }
+    .bt{
+        position: relative;
+        left:0px;
+        top: 20px;
+        
+    }
+hr{
+    width: 90%;
+    position: relative;top: 60px;
+}
+}
